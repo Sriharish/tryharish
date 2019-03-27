@@ -1,2 +1,2 @@
-# Vangavolu
-Angular workspace for portfolio and personal projects.
+# tryharish
+Personal site built with Angular and Firebase.
