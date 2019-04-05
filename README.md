@@ -13,4 +13,4 @@ Personal site built with Angular and Firebase.
 - [Flexbox grid](http://flexboxgrid.com/)
 
 ## Shout outs
-- [Joaquin Cid for initial setup](https://www.toptal.com/angular/angular-6-tutorial-new-features-power)
+- [Joaquin Cid for initial setup]()

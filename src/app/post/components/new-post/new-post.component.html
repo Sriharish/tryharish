@@ -1,0 +1,45 @@
+<div class="row center-xs">
+  <div class="col-xs-6">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <mat-card class="post-form">
+        <mat-card-title>
+          Add a Post
+        </mat-card-title>
+        <mat-card-content>
+          <mat-form-field appearance="outline">
+              <mat-label>Title</mat-label>
+              <input matInput placeholder="Make clickbait great again!..." formControlName="title" name="title" id="title">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Subtitle</mat-label>
+              <input matInput placeholder="Almost as important as title!..." formControlName="subtitle" name="subtitle" id="subtitle">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Header Image URL</mat-label>
+              <input matInput placeholder="Paste a good URL and they will come!..." formControlName="headerImage" name="headerImage" id="headerImage">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Thumbnail Image URL</mat-label>
+              <input matInput placeholder="Picture for people on the go!..." formControlName="thumbnail" name="thumbnail" id="thumbnail">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Description</mat-label>
+              <textarea rows="3" matInput placeholder="Why people should give a damn!..." formControlName="description" name="description" id="description"></textarea>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Handle (path)</mat-label>
+              <input matInput placeholder="A URL so people can see the clickbait!..." formControlName="handle" name="handle" id="handle">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+              <mat-label>Content</mat-label>
+            <textarea placeholder="Enter new post..." rows="3" matInput formControlName="content" name="content" id="content"></textarea>
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions align="center">
+          <button mat-button type="submit">SAVE</button>
+        </mat-card-actions>
+      </mat-card>
+     </form>
+     <pre> {{ post | json }} </pre>
+  </div>
+</div>

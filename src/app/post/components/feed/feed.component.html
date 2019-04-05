@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+          <h4>
+              Welcome to the blog!
+          </h4>
+      </div>
+  </div>
+  <div *ngIf="loading$ | async">
+      Loading...
+  </div>
+  <div *ngIf="noResults$ | async">
+      No results
+  </div>
+  <div class="row middle-xs">
+      <div class="col-xs-8">
+        <div *ngFor="let p of posts$ | async">
+            <app-post-preview [post]="p"></app-post-preview>
+        </div>
+      </div>
+  </div>
+</div>

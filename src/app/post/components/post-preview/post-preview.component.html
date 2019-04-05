@@ -1,0 +1,14 @@
+<mat-card>
+  <img mat-card-image [src]="post.headerImage">
+  <mat-card-title>{{post.title}}</mat-card-title>
+  <mat-card-content>
+    <img mat-card-avatar>
+    <span>{{post.author}}</span>
+    <span>{{post.date | date:'MMM d, y, h:mm a'}}</span>
+    <p>{{post.description}}</p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <a mat-button [routerLink]="['/feed']">MORE</a>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
