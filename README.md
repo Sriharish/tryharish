@@ -1,4 +1,4 @@
-# tryharish
+# My Portfolio
 Personal site built with Angular and Firebase.
 
 ## What's missing (in case you want to clone)?
